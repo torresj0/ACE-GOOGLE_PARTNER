@@ -52,3 +52,16 @@ Criar sistema escalavel no GCP:
 
   VPC -> global scope resource
   VM -> conjunao de recursos em um IP. nao e uma maquina fisica
+
+
+
+
+external TCP/UDP -> mantém o IP
+internal UDP/TCP -> mantém o IP
+internal http(s) -> mantém o IP
+
+
+internal -> IPV4. Por que? Porque não vão acabar com a conexão na camada do load balancer. Não faz o provisionamento do seu tráfego.
+
+INTERNO -> SÓ IPV4
+EXTERNO -> IPV4 OU IPV6
